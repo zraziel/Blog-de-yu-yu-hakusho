@@ -1,0 +1,169 @@
+/* Reseta alguns estilos padrão do navegador */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6a0dad; /* Fundo roxo */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#Menu {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #fff; /* Borda branca de 5px */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    padding: 5px; /* Espaçamento interno (opcional) */
+}
+
+/* Esconde a imagem na página de História */
+.historia-page .logo {
+    display: none; /* Esconde a imagem */
+}
+
+/* Estilo da navegação */
+nav#Blog {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+nav#Blog a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px; /* Aumenta o tamanho dos botões */
+    border-radius: 15px;
+    background-color: #4b0082; /* Um tom mais escuro de roxo para o fundo dos links */
+    transition: background-color 0.3s;
+}
+
+nav#Blog a:hover {
+    background-color: #5a0b7a; /* Cor do fundo quando o link é hover */
+}
+
+/* Estilo do conteúdo principal */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo da introdução */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo do título h1 */
+h1 {
+    color: rgb(37, 233, 37); /* Cor do texto do título */
+    border: 3px solid #fff; /* Borda branca de 3px */
+    padding: 10px; /* Espaçamento interno da borda */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    display: inline-block; /* Ajusta o título ao tamanho da borda */
+    margin-bottom: 2px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo do h2 com borda */
+h2 {
+    color: #fff; /* Cor do texto do h2 */
+    border: 2px solid #fff; /* Borda branca de 2px */
+    padding: 15px; /* Espaçamento interno da borda */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    margin: 20px auto; /* Margem superior e inferior, centralizando horizontalmente */
+    max-width: 80%; /* Largura máxima para garantir que não se estenda por toda a página */
+    background-color: rgba(0, 0, 0, 0.3); /* Cor de fundo translúcida para destacar o texto */
+}
+
+/* Estilo dos parágrafos */
+p {
+    color: #fff; /* Cor do texto */
+    margin: 20px auto; /* Margem automática nas laterais e margem superior/inferior de 20px */
+    max-width: 800px; /* Largura máxima do parágrafo */
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: #4b0082;
+}
+
+/* Estilo da página de Personagens */
+.personagens-page .logo {
+    display: none; /* Esconde a imagem na página de personagens */
+}
+
+/* Estilo das seções dos personagens */
+.personagem {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.personagem-image {
+    width: 150px; /* Ajusta o tamanho padrão das imagens dos personagens */
+    height: auto;
+    border: 3px solid #fff; /* Borda branca ao redor da imagem */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e a descrição */
+}
+
+/* Imagens específicas para personagens */
+.personagem.yusuke .personagem-image,
+.personagem.hiei .personagem-image,
+.personagem.kuwabawa .personagem-image {
+    width: 200px; /* Aumenta o tamanho das imagens específicas */
+}
+
+/* Estilo do título dos personagens */
+h2 {
+    color: rgb(37, 233, 37); /* Cor do texto do título */
+    border: 2px solid #fff; /* Borda branca ao redor do título */
+    padding: 25px; /* Espaçamento interno da borda */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    display: inline-block; /* Ajusta o título ao tamanho da borda */
+    margin-bottom: px; /* Espaçamento abaixo do título */
+}
+
+.scroll-to-top {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4b0082; /* Cor do botão */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão esteja acima do conteúdo */
+}
+
+.scroll-to-top:hover {
+    background-color: #5a0b7a; /* Cor do botão ao passar o mouse */
+}
